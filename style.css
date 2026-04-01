@@ -1,0 +1,94 @@
+:root{
+    --pri:#F8F4E1;
+    --sec:#381c09;
+    --tri1:#FEBA17;
+    --tri2:#B4846C;
+}
+
+
+@font-face{
+    font-family: light;
+    font-weight: 500;
+    src:url(./ITSeronDemo-Regular.otf)
+}
+
+@font-face{
+    font-family: italic;
+    font-weight: 500;
+    src:url(./ITSeronDemo-Italic.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: light;
+    color: var(--pri);
+}
+
+html,
+body {
+    height: 100%;
+    width:100%;
+}
+
+#main{
+    height:100%;
+    width:100%;
+    background-color: var(--sec);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--tri2);
+}
+section.allelems{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    padding-top: 80px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-evenly;
+    position: absolute;
+
+}
+
+.elem{
+    background-color: #FEBA17;
+    overflow: hidden;
+    
+    border-radius: 10px;
+    height: 430px;
+    width: 370px;
+    position: relative;
+    transition: all ease 0.2s;
+
+}
+.elem img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.elem h2{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    font-weight: 200;
+    font-size: 30px;
+}
+.elem:active{
+    scale: 0.97;
+}
+.fullelem{
+    height: 100%;
+    width: 100%;
+    background-color: #381c0a;
+    padding: 40px;
+    display: none;
+    position:absolute;
+}
